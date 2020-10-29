@@ -1,0 +1,15 @@
+Personal access client created successfully.
+Client ID: 91ce6d03-8802-4484-a87a-f8c7af6f9f3c
+Client secret: ACUULpLfLZ844xksuTjV949VzEZ0cae6oDL01RfU
+Password grant client created successfully.
+Client ID: 91ce6d03-8a21-4e06-bb2e-56616038145f
+Client secret: wsMVjptW3kMRj5Ctv9wjQ4h8UWa9KUs5zZBxRaP4
+
+
+
+ > http://localhost:8080/callback
+
+New client created successfully.
+Client ID: 91ce7cc2-6ef6-4dc0-ace1-e7e4e4f72ecd
+Client secret: qQFiMfq5x0DBJX7OTceCiXj6CGRI5CikrhzEIEhi
+

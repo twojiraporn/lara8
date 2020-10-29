@@ -15,12 +15,20 @@ use App\Http\Controllers\API\PostsController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::name('api.')->group(function () {
+Route::name('api.')->middleware(['auth:api'])->group(function () {
+    Route::get('posts/search/{title}', [PostsController::class, 'search']);
     Route::apiResource('posts', PostsController::class);
+});
+
+Route::get('/name', function () {
+    return [
+        'name' => 'Jiraporn Kowootthitam',
+        'id' => '6110401587'
+    ];
 });
 
 //Route::get('/posts', function () {
